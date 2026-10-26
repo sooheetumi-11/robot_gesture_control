@@ -1,0 +1,17 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# ROS / Colcon build artifacts
+build/
+install/
+log/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*~
+.DS_Store

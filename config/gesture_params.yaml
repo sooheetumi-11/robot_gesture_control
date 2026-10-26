@@ -1,0 +1,23 @@
+gesture_recognition_node:
+  ros__parameters:
+    camera_id: 0
+    frame_width: 640
+    frame_height: 480
+    min_detection_confidence: 0.7
+    min_tracking_confidence: 0.6
+    debounce_frames: 5
+    show_window: true
+    wave_window_seconds: 0.8
+    wave_min_oscillations: 2
+    wave_min_span: 0.07
+
+robot_behavior_node:
+  ros__parameters:
+    cmd_vel_topic: "/cmd_vel"
+    gesture_topic: "/detected_gesture"
+    linear_speed: 0.22
+    angular_speed: 0.45
+    watchdog_timeout: 1.5
+    forward_backward_cycles: 4
+    step_duration: 1.8
+    pause_duration: 0.3
